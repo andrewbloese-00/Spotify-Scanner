@@ -34,7 +34,7 @@ class SpotifyClient {
      * @param {string?} refreshToken 
      */
     constructor(accessToken=undefined,refreshToken=undefined){
-        if(!accessToken || !refreshToken) console.error("No token established. Must call getTokens before use!")
+        // if((!accessToken || !refreshToken) && process.env.VERBOSE > 0) console.error("No token established. Must call getTokens before use!")
         this.#accessToken = accessToken
         this.#refreshToken = refreshToken
         this.#cache = new SpotifyCache();
