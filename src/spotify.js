@@ -158,7 +158,7 @@ class SpotifyClient {
                 name: track.name, 
                 album: track.album.name,
                 art: track.album.images,
-                released: track.release_date, 
+                released: track.album.release_date, 
                 artists: track.artists.map(artist=>artist.name)
 
             }))

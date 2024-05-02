@@ -6,7 +6,8 @@ const cors = require('cors');
 const cookieParser = require('cookie-parser');
 
 // Custom Spotify API Library
-const { SpotifyClient } = require("./spotify");
+const { SpotifyClient } = require("./src/spotify");
+const { TracksPage } = require("./src/ui");
 
 const port = process.env.PORT || 8888
 const spotify = new SpotifyClient() //use custom spotify library
@@ -82,7 +83,7 @@ app.get("/analyze", async (req,res)=>{
       tracks[t][key] = features[t][key]
     }
   }
-  return res.status(200).json({tracks_and_features: tracks})
+  return res.status(200).send(TracksPage(tracks))
 
 })
 
