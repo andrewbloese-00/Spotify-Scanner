@@ -1,0 +1,21 @@
+{
+  "name": "spotify-scanner",
+  "version": "0.0.1",
+  "description": "custom spotify library with server integrations to analyze a user's top songs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Andrew Bloese (andrewbloese-00)",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "node-fetch": "^3.3.2",
+    "querystring": "^0.2.1"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
