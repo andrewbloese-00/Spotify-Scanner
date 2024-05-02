@@ -98,6 +98,6 @@ app.get('/refresh_token', async function(req, res) {
 
 //start the server on specified port
 app.listen(port, ()=>{
-  console.log(`Spotify Application Listenting on:\n > http://localhost:${port}`)
+  console.log(`🚀 "Spotify Scanner" launched on:\n > http://localhost:${port}`)
 });
 

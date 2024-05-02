@@ -37,6 +37,10 @@ OR
   node index.js
 ```
 
+you should see a similar output in your command line after starting the server
+
+![Example Terminal Output on Launch](https://firebasestorage.googleapis.com/v0/b/storeshit.appspot.com/o/Spotify-Scanner%2Fstartup-terminal-output.png?alt=media&token=41a7d1dd-76c0-4d21-9359-b4e86bcc128f)
+
 5. Login With Spotify: on server launch you will recieve a localhost address to open in your browser of choice. Follow the spotify login instructions and you will be automatically redirected to analyse page which will display your Spotify profile's Top 'n' songs along with various associated metadata and audio features. 
 
 ## File Descriptions
